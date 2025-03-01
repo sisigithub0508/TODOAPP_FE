@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   // Fetch user data
   fetchUserData(token: string) {
     this.http
-      .get('https://cyber2-be.onrender.com/api/todos/getuser', {
+      .get('https://todoapp-be-cf1e.onrender.com/api/todos/getuser', {
         headers: { Authorization: `Bearer ${token}` }
       })
       .subscribe({
